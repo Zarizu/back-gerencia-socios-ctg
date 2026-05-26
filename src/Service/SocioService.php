@@ -56,10 +56,11 @@ class SocioService
         return $socio;
     }
 
-    public function createSocio( 
+    public function createSocio(
         string $nome,
         string $cpf,
         string $telefone,
+        string $email,
         string $foto,
         string $identidade,
         array $enderecoData,
@@ -69,7 +70,6 @@ class SocioService
         string $categoria,
         bool $dancarino,
         bool $pagaInstrutor,
-        string $email = ''
     ): Socio {
 
         $endereco = new Endereco(
@@ -85,8 +85,8 @@ class SocioService
         $socio = new Socio(
             nome: $nome,
             cpf: $cpf,
-            email: $email,
             telefone: $telefone,
+            email: $email,
             foto: $foto,
             identidade: $identidade,
             endereco: $endereco,

@@ -20,9 +20,8 @@ Content-Type: application/json
 {
 	"nome": "Teste Silva",
 	"cpf": "999.999.999-99",
-	"email": "teste@email.com",
 	"telefone": "(11) 99999-9999",
-	"email" : "teste@gmail.com",
+	"email": "teste@gmail.com",
 	"foto": "http://example.com/foto.jpg",
 	"identidade": "MG-99.999.999",
 	"logradouro": "Rua Teste",
@@ -55,9 +54,8 @@ Content-Type: application/json
 {
 	"nome": "Teste Silva Atualizado",
 	"cpf": "999.999.999-99",
-	"email": "teste.atualizado@email.com",
 	"telefone": "(11) 98888-8888",
-	"email": "testesila@gmail.com",
+	"email": "teste.atualizado@email.com",
 	"foto": "http://example.com/foto2.jpg",
 	"identidade": "MG-99.999.999",
 	"logradouro": "Rua Nova",

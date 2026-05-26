@@ -56,9 +56,8 @@ class SocioController{
                 $socio = new Socio(
                     $data['nome'],
                     $data['cpf'],
-                    $data['email'] ?? '',
                     $data['telefone'],
-                    $data['email'],
+                    $data['email'] ?? '',
                     $data['foto'] ?? '',
                     $data['identidade'],
                     $endereco,
@@ -100,9 +99,8 @@ class SocioController{
                 $socio = new Socio(
                     $data['nome'],
                     $data['cpf'],
-                    $data['email'] ?? '',
                     $data['telefone'],
-                    $data['email'],
+                    $data['email'] ?? '',
                     $data['foto'] ?? '',
                     $data['identidade'],
                     $endereco,
