@@ -22,48 +22,51 @@ Content-Type: application/json
 	"socio_titular_id": 1,
 	"nome_completo": "Rafael Silva",
 	"cpf": "444.555.666-00",
-	"telefone": "(11) 94444-4444",
+	"foto": "",
 	"data_nascimento": "2018-07-20",
+	"data_entrada": "2026-04-01",
+	"categoria": 1,
 	"dancarino": true
 }
 
 ###
 
 # GET DEPENDENTE SPECIFIC - SUCCESS (update with ID from POST)
-GET http://localhost:8000/api/dependentes/4
+GET http://localhost:8000/api/dependentes/2
 Accept: application/json
 
 ###
 
 # PUT UPDATE DEPENDENTE - SUCCESS
-PUT http://localhost:8000/api/dependentes/4
+PUT http://localhost:8000/api/dependentes/2
 Content-Type: application/json
 
 {
 	"socio_titular_id": 1,
 	"nome_completo": "Rafael Silva Atualizado",
 	"cpf": "444.555.666-00",
-	"telefone": "(11) 93333-3333",
 	"data_nascimento": "2018-07-20",
-	"dancarino": true
+	"data_entrada": "2026-04-01",
+	"categoria": 2,
+	"dancarino": true,
 }
 
 ###
 
 # GET UPDATED DEPENDENTE - SUCCESS
-GET http://localhost:8000/api/dependentes/4
+GET http://localhost:8000/api/dependentes/2
 Accept: application/json
 
 ###
 
 # DELETE DEPENDENTE - SUCCESS
-DELETE http://localhost:8000/api/dependentes/4
+DELETE http://localhost:8000/api/dependentes/2
 Accept: application/json
 
 ###
 
 # GET DELETED DEPENDENTE - NOT FOUND
-GET http://localhost:8000/api/dependentes/4
+GET http://localhost:8000/api/dependentes/2
 Accept: application/json
 
 ###

@@ -35,10 +35,10 @@ INSERT INTO socios (id, nome_completo, cpf, telefone, email, foto, identidade, e
 (5, 'Carlos Ferreira', '321.654.987-00', '(11) 95555-5555','carlos@gmail.com', NULL, 'SP-32.165.498', 'Rua Secundária, 654', '1995-11-30', '2026-03-15', 3, 'Inativo', 0, 0);
 
 -- Insert Dependentes
-INSERT INTO dependentes (id, socio_titular_id, nome_completo, cpf, telefone, foto, data_nascimento, dancarino) VALUES
-(1, 1, 'Lucas Silva', '111.222.333-00', '(11) 99999-9999', NULL, '2012-05-10', 1),
-(2, 2, 'Julia Santos', '222.333.444-00', '(11) 98888-8888', NULL, '2015-07-25', 1),
-(3, 4, 'Felipe Costa', '333.444.555-00', '(11) 96666-6666', NULL, '2008-09-12', 1);
+INSERT INTO dependentes (id, socio_titular_id, nome_completo, cpf, foto, data_nascimento, data_entrada, categoria_id, dancarino) VALUES
+(1, 1, 'Lucas Silva', '111.222.333-00', NULL, '2012-05-10', '2026-01-15', 1, 1),
+(2, 2, 'Julia Santos', '222.333.444-00', NULL, '2015-07-25', '2026-02-01', 1, 1),
+(3, 4, 'Felipe Costa', '333.444.555-00', NULL, '2008-09-12', '2026-03-01', 2, 1);
 
 -- Insert Mensalidades
 INSERT INTO mensalidades (id, socio_id, dependente_id, mes, ano, valor, status, data_vencimento) VALUES

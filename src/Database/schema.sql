@@ -20,11 +20,12 @@ CREATE TABLE `dependentes` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `socio_titular_id` integer NOT NULL,
   `nome_completo` varchar(255),
-  `telefone` varchar(255),
   `cpf` varchar(255),
   `foto` blob,
   `data_nascimento` date,
-  `dancarino` boolean DEFAULT false
+  `data_entrada` date,
+  `categoria_id` integer,
+  `dancarino` boolean DEFAULT false,
 );
 
 CREATE TABLE `categorias` (
